@@ -58,7 +58,7 @@ class OracleClient:
 
 def main():
     parser = argparse.ArgumentParser(description="Exploit the padding oracle")
-    parser.add_argument('message', type=str,   action='store', help="should be 88 characters long in base64 encoding")
+    parser.add_argument('message', type=str,   action='store', help="should be in base64 encoding")
     parser.add_argument('url',     type=str,   action='store', help="URL, e.g. 'http://127.0.0.1:12345/'")
 
     args = parser.parse_args(sys.argv[1:])
